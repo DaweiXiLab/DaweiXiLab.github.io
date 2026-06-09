@@ -1,52 +1,7 @@
 # Xi Lab website v2
 
-This is a beginner-friendly static website for Dawei Xi / Xi Lab at Harvard SEAS-MSME.
 
-It does not require Jekyll, Ruby, npm, or command-line work. GitHub Pages can publish it directly.
-
-## Important
-
-Do not upload this ZIP file itself to GitHub as the website.
-
-You must unzip it first, then upload the files inside this folder so that `index.html` is at the top level of the repository.
-
-Correct:
-
-```text
-daweixi96.github.io/
-  index.html
-  research.html
-  publications.html
-  meetings.html
-  people.html
-  teaching.html
-  news.html
-  join.html
-  styles.css
-  assets/
-```
-
-Incorrect:
-
-```text
-daweixi96.github.io/
-  xi-lab-website-v2.zip
-```
-
-GitHub Pages needs an entry file called `index.html` at the top level of the publishing source.
-
-## Suggested GitHub setup
-
-Repository name:
-
-```text
-daweixi96.github.io
-```
-
-Website URL:
-
-```text
-https://daweixi96.github.io
+https://daweixilab.github.io
 ```
 
 Pages settings:
