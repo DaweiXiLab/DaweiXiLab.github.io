@@ -4,8 +4,38 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Publications | Xi Lab</title>
-  <meta name="description" content="Publications from Dawei Xi and collaborators, with TOC figure and paper-briefing positions." />
+  <meta name="description" content="Publications from Dawei Xi and collaborators, organized by year with publisher links, uploaded PDF links, and TOC figure positions." />
   <link rel="stylesheet" href="styles.css" />
+
+  <style>
+    html { scroll-padding-top: 110px; }
+    .publication-help { max-width: var(--max); margin: 0 auto; padding: 0 22px 24px; }
+    .publication-help-inner {
+      background: #ffffff; border: 1px solid var(--line); border-radius: var(--radius);
+      box-shadow: var(--shadow); padding: 18px 20px; color: var(--muted);
+    }
+    .publication-help code { background: #f0f4f7; color: var(--ink); padding: 2px 5px; border-radius: 6px; }
+    .year-nav {
+      position: sticky; top: 74px; z-index: 11; max-width: var(--max); margin: 0 auto 18px;
+      padding: 12px 22px; display: flex; flex-wrap: wrap; gap: 10px;
+      background: rgba(246, 248, 251, 0.92); backdrop-filter: blur(10px); border-bottom: 1px solid var(--line);
+    }
+    .year-nav a {
+      display: inline-flex; gap: 7px; align-items: center; padding: 9px 13px;
+      border: 1px solid var(--line); border-radius: 999px; background: white; color: var(--ink);
+      font-weight: 800; box-shadow: 0 8px 22px rgba(16, 32, 51, 0.06);
+    }
+    .year-nav a:hover { color: white; background: var(--accent); border-color: var(--accent); text-decoration: none; }
+    .year-nav span { color: var(--muted); font-size: 0.82rem; font-weight: 700; }
+    .year-nav a:hover span { color: white; }
+    .publication-year { border-top: 1px solid var(--line); }
+    .year-heading { display: flex; align-items: end; justify-content: space-between; gap: 18px; }
+    .back-to-years { font-size: 0.9rem; font-weight: 800; }
+    .pub-links a { border: 1px solid var(--line); border-radius: 999px; padding: 7px 11px; background: #fff; }
+    .pub-links a:hover { color: #fff; background: var(--accent-2); border-color: var(--accent-2); text-decoration: none; }
+    @media (max-width: 680px) { .year-nav { position: static; } .year-heading { display: block; } }
+  </style>
+
 </head>
 <body>
   <header class="site-header">
@@ -20,341 +50,421 @@
       <a href="join.html">Join</a>
     </nav>
   </header>
+
   <main class="page">
     <section class="page-hero">
       <p class="eyebrow">Publications</p>
-      <h1>Selected papers, with space for graphical abstracts and short briefings.</h1>
+      <h1>Publications by year, with publisher links, uploaded PDFs, and TOC figure positions.</h1>
       <p class="lead">
-        Replace each placeholder with a TOC figure, graphical abstract, or a 2–3 sentence
-        briefing. Add DOI, PDF, code, and data links as they become available.
+        Click a year to jump to that publication section. Each paper includes a publisher
+        page link, a local PDF link, and a TOC/graphical-abstract placeholder.
       </p>
     </section>
+
+    <nav class="year-nav" id="publication-years" aria-label="Publication years">
+      <a href="#year-2026">2026 <span>1</span></a>
+<a href="#year-2025">2025 <span>2</span></a>
+<a href="#year-2024">2024 <span>4</span></a>
+<a href="#year-2023">2023 <span>5</span></a>
+<a href="#year-2022">2022 <span>2</span></a>
+<a href="#year-2021">2021 <span>2</span></a>
+<a href="#year-2018">2018 <span>1</span></a>
+    </nav>
+
+    <section class="publication-help">
+      <div class="publication-help-inner">
+        <strong>How to make PDF links work:</strong>
+        upload your paper PDFs to <code>assets/papers/</code> using the exact file names used in each PDF link below.
+        For example, the H₂O₂ paper points to <code>assets/papers/xi-2025-nature-chemistry-h2o2.pdf</code>.
+      </div>
+    </section>
+
     
-      <section class="section">
-        <div class="section-heading">
-          <p class="eyebrow">Representative publications</p>
-          <h2>Representative publications</h2>
+      <section class="section publication-year" id="year-2026">
+        <div class="section-heading year-heading">
+          <div>
+            <p class="eyebrow">2026</p>
+            <h2>2026</h2>
+          </div>
+          <a class="back-to-years" href="#publication-years">Back to years ↑</a>
         </div>
         <div class="publication-list">
           
-        <article class="publication">
+        <article class="publication" id="xi-2026-carbon-future-co2-capture">
+          <div class="toc-placeholder">
+            <span class="toc-label">TOC / briefing</span>
+            <span class="toc-file">assets/images/toc-co2-bpm.jpg</span>
+          </div>
+          <div class="pub-body">
+            <p class="pub-meta">Carbon Future 3, 9200066 (2026). Selected as cover.</p>
+            <h3>Oxygen-tolerant CO₂ capture using protected redox-driven reverse bias bipolar membrane electrodialysis</h3>
+            <p class="authors">Dawei Xi*, Panlin Zhao*, Manav Bansal, Olivia T. Vulpin, Shannon W. Boettcher#, Michael J. Aziz#.</p>
+            <p>Protected reverse-bias bipolar membrane electrodialysis for oxygen-tolerant redox-driven carbon capture.</p>
+            <p class="pub-links">
+              <a href="https://doi.org/10.26599/cf.2026.9200066" target="_blank" rel="noopener">Publisher</a>
+              <a href="assets/papers/xi-2026-carbon-future-co2-capture.pdf" target="_blank" rel="noopener">PDF</a>
+              <a href="assets/images/toc-co2-bpm.jpg" target="_blank" rel="noopener">TOC figure</a>
+            </p>
+          </div>
+        </article>
+        </div>
+      </section>
+      <section class="section publication-year" id="year-2025">
+        <div class="section-heading year-heading">
+          <div>
+            <p class="eyebrow">2025</p>
+            <h2>2025</h2>
+          </div>
+          <a class="back-to-years" href="#publication-years">Back to years ↑</a>
+        </div>
+        <div class="publication-list">
+          
+        <article class="publication" id="xi-2025-nature-chemistry-h2o2">
           <div class="toc-placeholder">
             <span class="toc-label">TOC / briefing</span>
             <span class="toc-file">assets/images/toc-h2o2.jpg</span>
           </div>
           <div class="pub-body">
             <p class="pub-meta">Nature Chemistry 17, 1883–1890 (2025).</p>
-            <h3>Electrifying industrial hydrogen peroxide production via soft interfacial molecular mediation.</h3>
+            <h3>Electrifying industrial hydrogen peroxide production via soft interfacial molecular mediation</h3>
             <p class="authors">Dawei Xi*#(corresponding), Yuheng Wu*, Yuli Li, Michael J. Aziz#.</p>
             <p>Introduces aqueous–nonaqueous interfacial proton-coupled electron transfer as a safe, modular route to electrified H₂O₂ production.</p>
             <p class="pub-links">
-              <a href="#">DOI</a>
-              <a href="#">PDF</a>
-              <a href="#">TOC figure</a>
+              <a href="https://www.nature.com/articles/s41557-025-01940-7" target="_blank" rel="noopener">Publisher</a>
+              <a href="assets/papers/xi-2025-nature-chemistry-h2o2.pdf" target="_blank" rel="noopener">PDF</a>
+              <a href="assets/images/toc-h2o2.jpg" target="_blank" rel="noopener">TOC figure</a>
             </p>
           </div>
         </article>
 
-        <article class="publication">
-          <div class="toc-placeholder">
-            <span class="toc-label">TOC / briefing</span>
-            <span class="toc-file">assets/images/toc-co2-bpm.jpg</span>
-          </div>
-          <div class="pub-body">
-            <p class="pub-meta">Carbon Future (2026). Selected as cover.</p>
-            <h3>Oxygen-Tolerant CO₂ Capture using Protected Redox-Driven Reverse Bias Bipolar Membrane Electrodialysis.</h3>
-            <p class="authors">Dawei Xi*, Panlin Zhao*, Manav Bansal, Olivia T. Vulpin, Shannon W. Boettcher#, Michael J. Aziz#.</p>
-            <p>Protected reverse-bias bipolar membrane electrodialysis for oxygen-tolerant redox-driven carbon capture.</p>
-            <p class="pub-links">
-              <a href="#">DOI</a>
-              <a href="#">PDF</a>
-              <a href="#">TOC figure</a>
-            </p>
-          </div>
-        </article>
-
-        <article class="publication">
+        <article class="publication" id="xi-2025-ees-acid-base-generator">
           <div class="toc-placeholder">
             <span class="toc-label">TOC / briefing</span>
             <span class="toc-file">assets/images/toc-acid-base.jpg</span>
           </div>
           <div class="pub-body">
             <p class="pub-meta">Energy &amp; Environmental Science 18, 3839–3851 (2025).</p>
-            <h3>High efficiency acid-base generator for carbon management.</h3>
-            <p class="authors">Dawei Xi*#(corresponding), Zheng Yang*, Michael Emanuel, Michael J. Aziz#.</p>
+            <h3>Electrochemical acid–base generators for decoupled carbon management</h3>
+            <p class="authors">Dawei Xi*#(corresponding), Zheng Yang*, Michael S. Emanuel, Panlin Zhao, Michael J. Aziz#.</p>
             <p>Membrane-programmed H⁺/OH⁻ transport produces &gt;1 M acid/base at high current efficiency for carbon management.</p>
             <p class="pub-links">
-              <a href="#">DOI</a>
-              <a href="#">PDF</a>
-              <a href="#">TOC figure</a>
+              <a href="https://pubs.rsc.org/en/content/articlelanding/2025/ee/d4ee05109b" target="_blank" rel="noopener">Publisher</a>
+              <a href="assets/papers/xi-2025-ees-acid-base-generator.pdf" target="_blank" rel="noopener">PDF</a>
+              <a href="assets/images/toc-acid-base.jpg" target="_blank" rel="noopener">TOC figure</a>
             </p>
           </div>
         </article>
-
-        <article class="publication">
+        </div>
+      </section>
+      <section class="section publication-year" id="year-2024">
+        <div class="section-heading year-heading">
+          <div>
+            <p class="eyebrow">2024</p>
+            <h2>2024</h2>
+          </div>
+          <a class="back-to-years" href="#publication-years">Back to years ↑</a>
+        </div>
+        <div class="publication-list">
+          
+        <article class="publication" id="xi-2024-nature-energy-flow-battery">
           <div class="toc-placeholder">
             <span class="toc-label">TOC / briefing</span>
             <span class="toc-file">assets/images/toc-flow-battery.jpg</span>
           </div>
           <div class="pub-body">
             <p class="pub-meta">Nature Energy 9, 479–490 (2024). Highlighted by Nature Energy News &amp; Views.</p>
-            <h3>Mild pH-decoupling aqueous flow battery with practical pH recovery.</h3>
+            <h3>Mild pH-decoupling aqueous flow battery with practical pH recovery</h3>
             <p class="authors">Dawei Xi*, Abdulrahman M. Alfaraidi*, Jinxu Gao, Thomas Cochard, Luana C. I. Faria, Zheng Yang, Thomas Y. George, et al.</p>
             <p>Demonstrates high-voltage aqueous flow batteries using mild pH asymmetry and practical pH recovery.</p>
             <p class="pub-links">
-              <a href="#">DOI</a>
-              <a href="#">PDF</a>
-              <a href="#">TOC figure</a>
+              <a href="https://www.nature.com/articles/s41560-024-01474-1" target="_blank" rel="noopener">Publisher</a>
+              <a href="assets/papers/xi-2024-nature-energy-flow-battery.pdf" target="_blank" rel="noopener">PDF</a>
+              <a href="assets/images/toc-flow-battery.jpg" target="_blank" rel="noopener">TOC figure</a>
             </p>
           </div>
         </article>
 
-        <article class="publication">
+        <article class="publication" id="xi-2024-energy-advances-single-membrane">
           <div class="toc-placeholder">
             <span class="toc-label">TOC / briefing</span>
             <span class="toc-file">assets/images/toc-single-membrane.jpg</span>
           </div>
           <div class="pub-body">
             <p class="pub-meta">Energy Advances 3, 1911–1918 (2024).</p>
-            <h3>Single-membrane pH-decoupling aqueous batteries using proton-coupled electrochemistry for pH recovery.</h3>
+            <h3>Single-membrane pH-decoupling aqueous batteries using proton-coupled electrochemistry for pH recovery</h3>
             <p class="authors">Dawei Xi, Zheng Yang, Abdulrahman M. Alfaraidi, Yan Jing, Roy G. Gordon, Michael J. Aziz#.</p>
             <p>Simplifies pH-decoupled aqueous battery architectures using proton-coupled electrochemistry for pH recovery.</p>
             <p class="pub-links">
-              <a href="#">DOI</a>
-              <a href="#">PDF</a>
-              <a href="#">TOC figure</a>
+              <a href="https://pubs.rsc.org/en/content/articlehtml/2024/ya/d4ya00279b" target="_blank" rel="noopener">Publisher</a>
+              <a href="assets/papers/xi-2024-energy-advances-single-membrane.pdf" target="_blank" rel="noopener">PDF</a>
+              <a href="assets/images/toc-single-membrane.jpg" target="_blank" rel="noopener">TOC figure</a>
             </p>
           </div>
         </article>
 
-        <article class="publication">
-          <div class="toc-placeholder">
-            <span class="toc-label">TOC / briefing</span>
-            <span class="toc-file">assets/images/toc-single-atom.jpg</span>
-          </div>
-          <div class="pub-body">
-            <p class="pub-meta">Advanced Materials 34, 2104090 (2022).</p>
-            <h3>Limiting the Uncoordinated N Species in M–Nₓ Single-Atom Catalysts toward Electrocatalytic CO₂ Reduction in Broad Voltage Range.</h3>
-            <p class="authors">Dawei Xi*, Jiayi Li*, Jingxiang Low*, Keke Mao, Ran Long, Jiawei Li, Zehui Dai, Tianyi Shao, Yuan Zhong, Yu Li, Zibiao Li, Xian Jun Loh#, Li Song, Enyi Ye#, Yujie Xiong#.</p>
-            <p>Identifies catalyst-structure principles for broad-potential CO₂ reduction on M–Nₓ single-atom catalysts.</p>
-            <p class="pub-links">
-              <a href="#">DOI</a>
-              <a href="#">PDF</a>
-              <a href="#">TOC figure</a>
-            </p>
-          </div>
-        </article>
-
-        <article class="publication">
+        <article class="publication" id="wang-xi-2024-acs-hydrogen-storage">
           <div class="toc-placeholder">
             <span class="toc-label">TOC / briefing</span>
             <span class="toc-file">assets/images/toc-hydrogen-storage.jpg</span>
           </div>
           <div class="pub-body">
             <p class="pub-meta">ACS Applied Energy Materials 7, 6578–6584 (2024).</p>
-            <h3>Electrochemical hydrogen storage under ambient conditions in aqueous-soluble organics.</h3>
+            <h3>Electrochemical hydrogen storage under ambient conditions in aqueous-soluble organics</h3>
             <p class="authors">Taobo Wang*, Dawei Xi*, Michael J. Aziz#.</p>
             <p>Explores reversible electrochemical hydrogen storage using aqueous-soluble organic molecules under ambient conditions.</p>
             <p class="pub-links">
-              <a href="#">DOI</a>
-              <a href="#">PDF</a>
-              <a href="#">TOC figure</a>
+              <a href="https://pubs.acs.org/doi/10.1021/acsaem.4c01233" target="_blank" rel="noopener">Publisher</a>
+              <a href="assets/papers/wang-xi-2024-acs-hydrogen-storage.pdf" target="_blank" rel="noopener">PDF</a>
+              <a href="assets/images/toc-hydrogen-storage.jpg" target="_blank" rel="noopener">TOC figure</a>
             </p>
           </div>
         </article>
 
-        <article class="publication">
-          <div class="toc-placeholder">
-            <span class="toc-label">TOC / briefing</span>
-            <span class="toc-file">assets/images/toc-anthraquinone.jpg</span>
-          </div>
-          <div class="pub-body">
-            <p class="pub-meta">ACS Applied Energy Materials 6, 12259–12266 (2023).</p>
-            <h3>An Extremely Stable and Soluble NH₂-Substituted Anthraquinone Electrolyte for Aqueous Redox Flow Batteries.</h3>
-            <p class="authors">Abdulrahman M. Alfaraidi*, Dawei Xi*, Nina Ni, Thomas Y. George, Tatsuhiro Tsukamoto, Roy G. Gordon, Michael J. Aziz#, Richard Y. Liu#.</p>
-            <p>Reports a stable, soluble anthraquinone electrolyte for aqueous organic redox flow batteries.</p>
-            <p class="pub-links">
-              <a href="#">DOI</a>
-              <a href="#">PDF</a>
-              <a href="#">TOC figure</a>
-            </p>
-          </div>
-        </article>
-        </div>
-      </section>
-    
-      <section class="section">
-        <div class="section-heading">
-          <p class="eyebrow">Other publications</p>
-          <h2>Other publications</h2>
-        </div>
-        <div class="publication-list">
-          
-        <article class="publication">
+        <article class="publication" id="amini-xi-2024-nature-chemical-engineering">
           <div class="toc-placeholder">
             <span class="toc-label">TOC / briefing</span>
             <span class="toc-file">assets/images/toc-insitu.jpg</span>
           </div>
           <div class="pub-body">
             <p class="pub-meta">Nature Chemical Engineering 1, 774–786 (2024).</p>
-            <h3>In situ techniques for aqueous quinone-mediated electrochemical carbon capture and release.</h3>
+            <h3>In situ techniques for aqueous quinone-mediated electrochemical carbon capture and release</h3>
             <p class="authors">Kiana Amini, Thomas Cochard, Yan Jing, Jordan D. Sosa, Dawei Xi, Maia Alberts, Michael S. Emanuel, Emily F. Kerr, Roy G. Gordon#, Michael J. Aziz#.</p>
             <p>In-situ methods for studying quinone-mediated electrochemical carbon capture and release.</p>
             <p class="pub-links">
-              <a href="#">DOI</a>
-              <a href="#">PDF</a>
-              <a href="#">TOC figure</a>
+              <a href="https://www.nature.com/articles/s44286-024-00153-y" target="_blank" rel="noopener">Publisher</a>
+              <a href="assets/papers/amini-xi-2024-nature-chemical-engineering.pdf" target="_blank" rel="noopener">PDF</a>
+              <a href="assets/images/toc-insitu.jpg" target="_blank" rel="noopener">TOC figure</a>
+            </p>
+          </div>
+        </article>
+        </div>
+      </section>
+      <section class="section publication-year" id="year-2023">
+        <div class="section-heading year-heading">
+          <div>
+            <p class="eyebrow">2023</p>
+            <h2>2023</h2>
+          </div>
+          <a class="back-to-years" href="#publication-years">Back to years ↑</a>
+        </div>
+        <div class="publication-list">
+          
+        <article class="publication" id="alfaraidi-xi-2023-acs-anthraquinone">
+          <div class="toc-placeholder">
+            <span class="toc-label">TOC / briefing</span>
+            <span class="toc-file">assets/images/toc-anthraquinone.jpg</span>
+          </div>
+          <div class="pub-body">
+            <p class="pub-meta">ACS Applied Energy Materials 6, 12259–12266 (2023).</p>
+            <h3>An Extremely Stable and Soluble NH₂-Substituted Anthraquinone Electrolyte for Aqueous Redox Flow Batteries</h3>
+            <p class="authors">Abdulrahman M. Alfaraidi*, Dawei Xi*, Nina Ni, Thomas Y. George, Tatsuhiro Tsukamoto, Roy G. Gordon, Michael J. Aziz#, Richard Y. Liu#.</p>
+            <p>Reports a stable, soluble anthraquinone electrolyte for aqueous organic redox flow batteries.</p>
+            <p class="pub-links">
+              <a href="https://pubs.acs.org/doi/10.1021/acsaem.3c01943" target="_blank" rel="noopener">Publisher</a>
+              <a href="assets/papers/alfaraidi-xi-2023-acs-anthraquinone.pdf" target="_blank" rel="noopener">PDF</a>
+              <a href="assets/images/toc-anthraquinone.jpg" target="_blank" rel="noopener">TOC figure</a>
             </p>
           </div>
         </article>
 
-        <article class="publication">
+        <article class="publication" id="pang-xi-2023-nature-energy-phenazine">
           <div class="toc-placeholder">
             <span class="toc-label">TOC / briefing</span>
             <span class="toc-file">assets/images/toc-phenazine.jpg</span>
           </div>
           <div class="pub-body">
             <p class="pub-meta">Nature Energy 8, 1126–1136 (2023).</p>
-            <h3>A phenazine-based high-capacity and high-stability electrochemical CO₂ capture cell with coupled electricity storage.</h3>
+            <h3>A phenazine-based high-capacity and high-stability electrochemical CO₂ capture cell with coupled electricity storage</h3>
             <p class="authors">Shuai Pang*, Shijian Jin*, Fengcun Yang, Maia Alberts, Lu Li, Dawei Xi, Roy G. Gordon, Pan Wang#, Michael J. Aziz#, Yunlong Ji#.</p>
             <p>Couples electrochemical CO₂ capture with electricity storage using phenazine chemistry.</p>
             <p class="pub-links">
-              <a href="#">DOI</a>
-              <a href="#">PDF</a>
-              <a href="#">TOC figure</a>
+              <a href="https://www.nature.com/articles/s41560-023-01347-z" target="_blank" rel="noopener">Publisher</a>
+              <a href="assets/papers/pang-xi-2023-nature-energy-phenazine.pdf" target="_blank" rel="noopener">PDF</a>
+              <a href="assets/images/toc-phenazine.jpg" target="_blank" rel="noopener">TOC figure</a>
             </p>
           </div>
         </article>
 
-        <article class="publication">
+        <article class="publication" id="zhang-xi-2023-nature-communications-methane">
           <div class="toc-placeholder">
             <span class="toc-label">TOC / briefing</span>
             <span class="toc-file">assets/images/toc-methane.jpg</span>
           </div>
           <div class="pub-body">
             <p class="pub-meta">Nature Communications 14, 3047 (2023).</p>
-            <h3>Light-driven flow synthesis of acetic acid from methane with chemical looping.</h3>
+            <h3>Light-driven flow synthesis of acetic acid from methane with chemical looping</h3>
             <p class="authors">Wenqing Zhang, Dawei Xi, Yihong Chen, Aobo Chen, Yawen Jiang, Hengjie Liu, Zeyu Zhou, et al.</p>
             <p>Flow synthesis strategy for methane-to-acetic-acid conversion through chemical looping.</p>
             <p class="pub-links">
-              <a href="#">DOI</a>
-              <a href="#">PDF</a>
-              <a href="#">TOC figure</a>
+              <a href="https://www.nature.com/articles/s41467-023-38731-y" target="_blank" rel="noopener">Publisher</a>
+              <a href="assets/papers/zhang-xi-2023-nature-communications-methane.pdf" target="_blank" rel="noopener">PDF</a>
+              <a href="assets/images/toc-methane.jpg" target="_blank" rel="noopener">TOC figure</a>
             </p>
           </div>
         </article>
 
-        <article class="publication">
+        <article class="publication" id="zhang-xi-2023-cell-reports-bicarbonate">
           <div class="toc-placeholder">
             <span class="toc-label">TOC / briefing</span>
             <span class="toc-file">assets/images/toc-bicarbonate.jpg</span>
           </div>
           <div class="pub-body">
-            <p class="pub-meta">Cell Reports Physical Science 4 (2023).</p>
-            <h3>A carbon-efficient bicarbonate electrolyzer.</h3>
+            <p class="pub-meta">Cell Reports Physical Science 4, 101662 (2023).</p>
+            <h3>A carbon-efficient bicarbonate electrolyzer</h3>
             <p class="authors">Zhen Zhang, Dawei Xi, Zhichu Ren, Ju Li#.</p>
             <p>Bicarbonate electrolysis design emphasizing carbon efficiency.</p>
             <p class="pub-links">
-              <a href="#">DOI</a>
-              <a href="#">PDF</a>
-              <a href="#">TOC figure</a>
+              <a href="https://www.cell.com/cell-reports-physical-science/fulltext/S2666-3864%2823%2900485-X" target="_blank" rel="noopener">Publisher</a>
+              <a href="assets/papers/zhang-xi-2023-cell-reports-bicarbonate.pdf" target="_blank" rel="noopener">PDF</a>
+              <a href="assets/images/toc-bicarbonate.jpg" target="_blank" rel="noopener">TOC figure</a>
             </p>
           </div>
         </article>
 
-        <article class="publication">
+        <article class="publication" id="wang-xi-2023-small-em-absorption">
           <div class="toc-placeholder">
             <span class="toc-label">TOC / briefing</span>
             <span class="toc-file">assets/images/toc-em.jpg</span>
           </div>
           <div class="pub-body">
-            <p class="pub-meta">Small 20, 2308970 (2023).</p>
-            <h3>Tunable Impedance of Cobalt Loaded Carbon for Wide-Range Electromagnetic Wave Absorption.</h3>
+            <p class="pub-meta">Small 20, 2308970 (2023/2024 issue).</p>
+            <h3>Tunable Impedance of Cobalt Loaded Carbon for Wide-Range Electromagnetic Wave Absorption</h3>
             <p class="authors">Xiaonong Wang*, Zhongliao Wang*, Dawei Xi*, Jiayi Li, Xiaoxia Li, Xiujun Bai, Bin Wang, Jingxiang Low#, Yujie Xiong#.</p>
             <p>Cobalt-loaded carbon materials with tunable impedance for electromagnetic wave absorption.</p>
             <p class="pub-links">
-              <a href="#">DOI</a>
-              <a href="#">PDF</a>
-              <a href="#">TOC figure</a>
+              <a href="https://onlinelibrary.wiley.com/doi/10.1002/smll.202308970" target="_blank" rel="noopener">Publisher</a>
+              <a href="assets/papers/wang-xi-2023-small-em-absorption.pdf" target="_blank" rel="noopener">PDF</a>
+              <a href="assets/images/toc-em.jpg" target="_blank" rel="noopener">TOC figure</a>
+            </p>
+          </div>
+        </article>
+        </div>
+      </section>
+      <section class="section publication-year" id="year-2022">
+        <div class="section-heading year-heading">
+          <div>
+            <p class="eyebrow">2022</p>
+            <h2>2022</h2>
+          </div>
+          <a class="back-to-years" href="#publication-years">Back to years ↑</a>
+        </div>
+        <div class="publication-list">
+          
+        <article class="publication" id="xi-2022-advanced-materials-single-atom">
+          <div class="toc-placeholder">
+            <span class="toc-label">TOC / briefing</span>
+            <span class="toc-file">assets/images/toc-single-atom.jpg</span>
+          </div>
+          <div class="pub-body">
+            <p class="pub-meta">Advanced Materials 34, 2104090 (2022).</p>
+            <h3>Limiting the Uncoordinated N Species in M–Nₓ Single-Atom Catalysts toward Electrocatalytic CO₂ Reduction in Broad Voltage Range</h3>
+            <p class="authors">Dawei Xi*, Jiayi Li*, Jingxiang Low*, Keke Mao, Ran Long, Jiawei Li, Zehui Dai, Tianyi Shao, Yuan Zhong, Yu Li, Zibiao Li, Xian Jun Loh#, Li Song, Enyi Ye#, Yujie Xiong#.</p>
+            <p>Identifies catalyst-structure principles for broad-potential CO₂ reduction on M–Nₓ single-atom catalysts.</p>
+            <p class="pub-links">
+              <a href="https://onlinelibrary.wiley.com/doi/10.1002/adma.202104090" target="_blank" rel="noopener">Publisher</a>
+              <a href="assets/papers/xi-2022-advanced-materials-single-atom.pdf" target="_blank" rel="noopener">PDF</a>
+              <a href="assets/images/toc-single-atom.jpg" target="_blank" rel="noopener">TOC figure</a>
             </p>
           </div>
         </article>
 
-        <article class="publication">
+        <article class="publication" id="gao-xi-2022-advanced-energy-materials-iron">
           <div class="toc-placeholder">
             <span class="toc-label">TOC / briefing</span>
             <span class="toc-file">assets/images/toc-iron.jpg</span>
           </div>
           <div class="pub-body">
             <p class="pub-meta">Advanced Energy Materials 12, 2202444 (2022).</p>
-            <h3>A High Potential, Low Capacity Fade Rate Iron Complex Posolyte for Aqueous Organic Flow Batteries.</h3>
+            <h3>A High Potential, Low Capacity Fade Rate Iron Complex Posolyte for Aqueous Organic Flow Batteries</h3>
             <p class="authors">Jinxu Gao, Kiana Amini, Thomas Y. George, Yan Jing, Tatsuhiro Tsukamoto, Dawei Xi, Roy G. Gordon#, Michael J. Aziz#.</p>
             <p>A high-potential iron-complex posolyte for aqueous organic flow battery systems.</p>
             <p class="pub-links">
-              <a href="#">DOI</a>
-              <a href="#">PDF</a>
-              <a href="#">TOC figure</a>
+              <a href="https://onlinelibrary.wiley.com/doi/10.1002/aenm.202202444" target="_blank" rel="noopener">Publisher</a>
+              <a href="assets/papers/gao-xi-2022-advanced-energy-materials-iron.pdf" target="_blank" rel="noopener">PDF</a>
+              <a href="assets/images/toc-iron.jpg" target="_blank" rel="noopener">TOC figure</a>
             </p>
           </div>
         </article>
-
-        <article class="publication">
+        </div>
+      </section>
+      <section class="section publication-year" id="year-2021">
+        <div class="section-heading year-heading">
+          <div>
+            <p class="eyebrow">2021</p>
+            <h2>2021</h2>
+          </div>
+          <a class="back-to-years" href="#publication-years">Back to years ↑</a>
+        </div>
+        <div class="publication-list">
+          
+        <article class="publication" id="ma-xi-2021-angew-wo3-methane">
           <div class="toc-placeholder">
             <span class="toc-label">TOC / briefing</span>
             <span class="toc-file">assets/images/toc-wo3.jpg</span>
           </div>
           <div class="pub-body">
-            <p class="pub-meta">Angewandte Chemie 133, 9443–9447 (2021).</p>
-            <h3>Efficient photoelectrochemical conversion of methane into ethylene glycol by WO₃ nanobar arrays.</h3>
+            <p class="pub-meta">Angewandte Chemie International Edition 60, 9357–9361 (2021).</p>
+            <h3>Efficient photoelectrochemical conversion of methane into ethylene glycol by WO₃ nanobar arrays</h3>
             <p class="authors">Jun Ma*, Keke Mao*, Jingxiang Low*, Zihao Wang, Dawei Xi, Wenqing Zhang, Huanxin Ju, Zeming Qi, Ran Long, Xiaojun Wu, Li Song#, Yujie Xiong#.</p>
             <p>Photoelectrochemical methane conversion using WO₃ nanobar arrays.</p>
             <p class="pub-links">
-              <a href="#">DOI</a>
-              <a href="#">PDF</a>
-              <a href="#">TOC figure</a>
+              <a href="https://onlinelibrary.wiley.com/doi/10.1002/anie.202101701" target="_blank" rel="noopener">Publisher</a>
+              <a href="assets/papers/ma-xi-2021-angew-wo3-methane.pdf" target="_blank" rel="noopener">PDF</a>
+              <a href="assets/images/toc-wo3.jpg" target="_blank" rel="noopener">TOC figure</a>
             </p>
           </div>
         </article>
 
-        <article class="publication">
+        <article class="publication" id="guo-xi-2021-matter-contact-lens">
           <div class="toc-placeholder">
             <span class="toc-label">TOC / briefing</span>
             <span class="toc-file">assets/images/toc-sensor.jpg</span>
           </div>
           <div class="pub-body">
             <p class="pub-meta">Matter 4, 969–985 (2021).</p>
-            <h3>Integrated contact lens sensor system based on multifunctional ultrathin MoS₂ transistors.</h3>
+            <h3>Integrated contact lens sensor system based on multifunctional ultrathin MoS₂ transistors</h3>
             <p class="authors">Shiqi Guo#, Kaijin Wu, Chengpan Li, Hao Wang, Zheng Sun, Dawei Xi, Sheng Zhang, Weiping Ding, Mona E. Zaghloul, Changning Wang, Fernando A. Castro, Dong Yang#, Yunlong Zhao#.</p>
             <p>An integrated ultrathin MoS₂ transistor platform for contact-lens sensing.</p>
             <p class="pub-links">
-              <a href="#">DOI</a>
-              <a href="#">PDF</a>
-              <a href="#">TOC figure</a>
+              <a href="https://www.cell.com/matter/fulltext/S2590-2385%2820%2930671-8" target="_blank" rel="noopener">Publisher</a>
+              <a href="assets/papers/guo-xi-2021-matter-contact-lens.pdf" target="_blank" rel="noopener">PDF</a>
+              <a href="assets/images/toc-sensor.jpg" target="_blank" rel="noopener">TOC figure</a>
             </p>
           </div>
         </article>
-
-        <article class="publication">
+        </div>
+      </section>
+      <section class="section publication-year" id="year-2018">
+        <div class="section-heading year-heading">
+          <div>
+            <p class="eyebrow">2018</p>
+            <h2>2018</h2>
+          </div>
+          <a class="back-to-years" href="#publication-years">Back to years ↑</a>
+        </div>
+        <div class="publication-list">
+          
+        <article class="publication" id="li-xi-2018-small-water-oxidation">
           <div class="toc-placeholder">
             <span class="toc-label">TOC / briefing</span>
             <span class="toc-file">assets/images/toc-water-oxidation.jpg</span>
           </div>
           <div class="pub-body">
             <p class="pub-meta">Small 14, 1702109 (2018).</p>
-            <h3>Scalable fabrication of highly active and durable membrane electrodes toward water oxidation.</h3>
+            <h3>Scalable fabrication of highly active and durable membrane electrodes toward water oxidation</h3>
             <p class="authors">Yu Li, Shuangming Chen, Dawei Xi, Yanan Bo, Ran Long, Chengming Wang, Li Song#, Yujie Xiong#.</p>
             <p>Scalable membrane-electrode fabrication for water oxidation.</p>
             <p class="pub-links">
-              <a href="#">DOI</a>
-              <a href="#">PDF</a>
-              <a href="#">TOC figure</a>
+              <a href="https://onlinelibrary.wiley.com/doi/10.1002/smll.201702109" target="_blank" rel="noopener">Publisher</a>
+              <a href="assets/papers/li-xi-2018-small-water-oxidation.pdf" target="_blank" rel="noopener">PDF</a>
+              <a href="assets/images/toc-water-oxidation.jpg" target="_blank" rel="noopener">TOC figure</a>
             </p>
           </div>
         </article>
         </div>
       </section>
-    
   </main>
+
   <footer class="footer small-footer"><p>© <span id="year"></span> Xi Lab</p></footer>
   <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
 </body>
