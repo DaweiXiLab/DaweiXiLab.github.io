@@ -36,8 +36,10 @@ toc-co2-bpm.jpg
 toc-acid-base.jpg
 toc-flow-battery.jpg
 ```
+```How to make PDF links work:</strong>
+upload your paper PDFs to <code>assets/papers/</code> using the exact file names used in each PDF link below.
+For example, the H₂O₂ paper points to <code>assets/papers/xi-2025-nature-chemistry-h2o2.pdf</code>.
 
-## Editing tips
 
 The site text lives in the HTML files. Open them in any text editor and search for the phrase you want to change.
 
