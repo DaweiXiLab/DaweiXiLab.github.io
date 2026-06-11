@@ -399,6 +399,17 @@ a:hover { text-decoration: underline; }
   gap: 24px;
   padding: 20px;
 }
+.publication.no-toc {
+  grid-template-columns: 1fr;
+}
+
+.publication.no-toc .pub-body {
+  max-width: 900px;
+}
+
+.publication.no-toc .pub-links {
+  margin-top: 12px;
+}
 
 .toc-placeholder {
   min-height: 160px;
